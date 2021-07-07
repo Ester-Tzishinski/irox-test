@@ -7,7 +7,7 @@ const Home = () => {
             <body>
                 <div className="header">
                     <Link to="/UploadEvents">Upload Events</Link> |
-                <Link to="/EventsTable">Events Table</Link>
+                    <Link to="/EventsFTable">Events Table</Link>
                     <Link to="/" className="homeLink">Home</Link>
                 </div>
 

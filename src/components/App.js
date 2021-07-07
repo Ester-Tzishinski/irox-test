@@ -9,8 +9,8 @@ function App() {
     return (
 		<Router>
 		 		<Switch>	
-				{/* <Route path='/UploadEvents' component={UploadEvents}/> */}
-				{/* <Route path='/EventsTable' component={EventsTable}/> */}
+				<Route path='/UploadEvents' component={UploadEvents}/>
+				<Route path='/EventsTable' component={EventsTable}/>
 				<Route path='/' component={Home}/>
 			</Switch>
 		 </Router>

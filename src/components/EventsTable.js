@@ -1,0 +1,1 @@
+{/* <BootstrapTable keyField='id' data = {items} columns = {columns} /> */}
