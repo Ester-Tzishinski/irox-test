@@ -1,0 +1,40 @@
+body {
+  background-color: rgb(161, 233, 179);
+}
+
+.homeContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(58, 110, 71);
+  height: calc(55vh );
+  margin-top: 7%;
+}
+
+.homeContainer>h1{
+  font-size: 3rem;
+  color:white;
+}
+
+.homeLink{
+  margin-left:68%;
+  font-size: 20px!important;
+}
+
+.header{
+  background-color: black;
+  height: calc(15vh);
+  display: flex;
+  align-items: center;
+  padding: 0 4%;
+}
+
+.header>a, .header div{
+  color: white;
+  font-size: 30px;
+  padding-left: 15px;
+}
+
+.header>a:hover, .header div:hover{
+color:rgb(161, 233, 179);
+}
