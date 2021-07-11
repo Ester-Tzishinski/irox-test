@@ -1,35 +1,54 @@
+// import '../css/App.css';
+// import 'antd/dist/antd.css';
 
-function UploadEvents() {
+// import { Form, Input, Button, message, Upload } from 'antd';
+// import { UploadOutlined } from '@ant-design/icons';
+// import { SaveJsonData } from '../Redux/actions';
+// import { useDispatch, useSelector } from "react-redux";
+// import { Link } from 'react-router-dom';
 
-    return (
-        <div className="input-group">
-            <div className="input-group-prepend">
-                <span className="input-group-text" id="inputGroupFileAddon01">
-                    Upload
-          </span>
-            </div>
-            <div className="custom-file">
-                <input
-                    type="file"
-                    className="file"
-                    id="inputGroupFile01"
-                    onChange={event => {
-                        console.log(event.target.files);
-                        const e=event.target.files;
 
-                        const reader = new FileReader();
+// const UploadFile = () => {
+//     const dispatch = useDispatch();
 
-                        reader.onload = e => {
-                            const jsonFileContent = e.target.result;
-                            console.log(jsonFileContent);
-                            const JsonObj = JSON.parse(jsonFileContent);
-                            // dispatch(SaveJsonData(JsonObj.Events.Event));
-                        };
-                        reader.readAsText(event);
-                    }}
-                />
-            </div>
-        </div>
-    );
-}
-export default UploadEvents;
+//     return (
+//         <div className="homeContainer">
+//               <input
+//                     type="file"
+//                     className="file"
+//                     id="inputGroupFile01"
+//                     onChange={event => {
+//                         const file = event.target.files[0];
+//                         const reader = new FileReader();
+//                         reader.onload = e => {
+//                             const jsonFileContent = e.target.result;
+//                             console.log(jsonFileContent);
+//                             const JsonObj = JSON.parse(jsonFileContent);
+//                             dispatch(SaveJsonData(JsonObj.Events.Event));
+//                         };
+//                         reader.readAsText(file);
+//                     }}
+//                 />
+//             {/* <Upload beforeUpload={file => {
+//                 const reader = new FileReader();
+
+//                     reader.onload = e => {
+//                         const jsonFileContent = e.target.result;
+//                         console.log(jsonFileContent);
+//                         const JsonObj = JSON.parse(jsonFileContent);
+//                         dispatch(SaveJsonData(JsonObj.Events.Event));
+//                     };
+//                     reader.readAsText(file);
+
+//                     // Prevent upload
+//                     return false;
+//                 }}
+//                 listType="text">
+//                 <Button icon={<UploadOutlined />}>Click to upload</Button>
+//             </Upload> */}
+//             <Button><Link to="/Table">{'>>'}</Link></Button>                                                                       
+//       </div>
+//     );
+// }
+
+// export default UploadFile;
